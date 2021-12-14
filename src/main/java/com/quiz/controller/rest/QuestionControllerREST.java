@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.quiz.controller.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloRest {
+public class QuestionControllerREST {
 
-    @GetMapping("/hellorest")
+    @GetMapping("/hello")
     public String hello(){
-        return "{hello: \"hello\"}";
+        return "{hello: world}";
     }
 }
